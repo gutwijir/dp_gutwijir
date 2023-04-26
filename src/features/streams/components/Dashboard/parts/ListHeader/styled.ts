@@ -25,6 +25,7 @@ export const StyledListHeader = styled.div`
 
 export const HeaderActionButton = styled.button`
   height: 3.2rem;
+  width: 5rem;
   border: none;
   background: transparent;
   display: flex;
