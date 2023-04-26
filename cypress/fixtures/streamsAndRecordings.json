@@ -1,0 +1,21 @@
+{
+  "ongoingStreams": [
+    {
+      "id": "1",
+      "name": "Datamole 14-05-2024 user testing participant 01",
+      "thumbnails": ["/demo_camera_feed.png", "/demo_camera_feed.png"]
+    }
+  ],
+  "recordings": [
+    {
+      "id": "2",
+      "name": "Datamole 13-05-2024 user testing participant 02",
+      "thumbnails": ["/demo_camera_feed.png", "/demo_camera_feed.png"]
+    },
+    {
+      "id": "3",
+      "name": "Datamole 12-05-2024 user testing participant 03",
+      "thumbnails": ["/demo_camera_feed.png", "/demo_camera_feed.png"]
+    }
+  ]
+}

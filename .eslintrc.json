@@ -1,0 +1,26 @@
+{
+  "ignorePatterns": ["/src/generated-graphql", "codegen.ts"], 
+  //https://github.com/react-hook-form/react-hook-form/discussions/8622?sort=old
+  "rules": {
+    "@typescript-eslint/no-misused-promises": [
+      2,
+      {
+        "checksVoidReturn": {
+          "attributes": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+
+  "extends": [
+    "next/core-web-vitals",
+    "@strv/react",
+    "@strv/typescript",
+    "@strv/typescript/react"
+  ],
+
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node", "cypress-real-events"]
+  },
+  "include": ["**/*.ts", "support/commands.tsx", "support/commands.tsx", "support/component.tsx", "support/component.tsx"]
+}
