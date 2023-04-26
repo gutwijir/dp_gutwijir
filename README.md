@@ -4,7 +4,7 @@
 
 Welcome to Ooolab, a Next.js application providing ease UX laboratory testing. Developed as part of Master's degree thesis in cooperation with UsabilityLab FIT.
 
-Demo: [ooolab.vercel.app](ooolab.vercel.app)
+Demo: [https://dp-gutwijir.vercel.app](https://dp-gutwijir.vercel.app)
 
 ## Getting Started
 
