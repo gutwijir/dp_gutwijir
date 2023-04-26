@@ -72,7 +72,7 @@ export const TooltipWrapper = styled.div<{
       justify-content: flex-start;
 
       ${StyledTooltip} {
-        padding-left: 0.5rem;
+        padding-left: 1rem;
       }
     `}
 

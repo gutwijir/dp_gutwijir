@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 
-import { useAuthContext } from '@/src/features/auth/contexts/auth'
+import { getPersistedUser } from '@/src/features/auth/storage'
 import { UserRole } from '@/src/features/auth/types'
 import { useIsRole } from '@/src/features/login/pages/LoginPage/hooks/useIsRole'
 import { useVideoContext } from '@/src/features/streams/contexts/video'
@@ -20,7 +20,7 @@ type Props = {
 }
 
 export const NoteBubble: FC<Props> = ({ note }) => {
-  const { user } = useAuthContext()
+  const user = getPersistedUser()
 
   const isFromMe = note.author.email === `${user?.username}@example.com`
 

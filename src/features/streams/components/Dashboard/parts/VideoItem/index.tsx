@@ -8,6 +8,7 @@ import { UserRole } from '@/src/features/auth/types'
 import { useVideoContext } from '@/src/features/streams/contexts/video'
 import type { StreamThumbnail } from '@/src/features/streams/types'
 import { LiveIcon } from '@/src/features/ui/icons/LiveIcon/styled'
+import { env } from '@/src/utils/env'
 
 import { StyledVideoItem } from './styled'
 
@@ -39,7 +40,7 @@ export const VideoItem: FC<Props> = ({ data, isLive }) => {
       <StyledVideoItem>
         {isLive ? <LiveIcon data-cy="LiveIcon" /> : null}
         <Image
-          src={data.thumbnails[0]}
+          src={env('NEXT_PUBLIC_BASE_URL') + data.thumbnails[0]}
           alt="Stream thumbnail"
           width="39"
           height="22"

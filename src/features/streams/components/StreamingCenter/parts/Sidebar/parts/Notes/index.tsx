@@ -38,8 +38,8 @@ export const Notes: FC = () => {
 
   const [displayedNotes, setDisplayedNotes] = useState(currentStream?.notes)
   useEffect(() => {
-    setDisplayedNotes((prevNotes) => {
-      return [...(prevNotes ?? [])]
+    setDisplayedNotes(
+      [...(currentStream?.notes ?? [])]
         .filter((note) => {
           //if recording && timestamp of a note does not make sense
           if (!isLive && note.timestamp > recordingDuration * 1000) {
@@ -51,8 +51,18 @@ export const Notes: FC = () => {
           return true
         })
         .sort((noteA, noteB) => noteA.timestamp - noteB.timestamp)
-    })
-  }, [isLive, isShowingMyNotesOnly, recordingDuration, user?.username])
+    )
+  }, [
+    currentStream?.notes,
+    isLive,
+    isShowingMyNotesOnly,
+    recordingDuration,
+    user?.username,
+  ])
+
+  useEffect(() => {
+    console.log('displayed notes', displayedNotes)
+  }, [displayedNotes])
 
   return (
     <SearchableComponent>

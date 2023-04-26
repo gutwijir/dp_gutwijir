@@ -15,7 +15,6 @@ export const NotesWrapper = styled.section`
 export const StyledNotesTooltip = styled(Tooltip)`
   position: relative;
   left: 0;
-  top: 1rem;
   width: min-content;
 
   justify-content: flex-start;
@@ -31,4 +30,5 @@ export const ShowHideMessagesButton = styled.button`
   cursor: pointer;
   background: transparent;
   border: none;
+  display: flex;
 `
